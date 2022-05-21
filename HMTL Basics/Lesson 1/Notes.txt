@@ -1,0 +1,6 @@
+Notes:
+
+Tags are a way of opening a child to the current branch
+Copy paths from context menu of VS Code
+
+Zed LOVES him some linux jokes
