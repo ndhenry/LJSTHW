@@ -1,0 +1,41 @@
+----------------------
+- 02: Tags in Detail -
+----------------------
+
+---
+- Void Elements
+---
+Void elements are types of tags that have no children
+    The tag is the content, and nothing beyond
+    Examples:   <img src="cupcake.png">
+                <img src="cupcake.png"/>
+
+    End tag may be assumed or included via an end slash in the first tag
+
+    Common void tags
+        br
+        hr
+        img
+        input
+        link
+        meta
+
+---
+- Escape Codes
+---
+The escape codes to use are 
+    &lt; for < (less-than)
+    &gt; for > (greater-than) characters
+
+---
+-Raw Text Elements
+---
+Raw text elements = HTML ignores contents
+                  = processed by some other system
+
+Types
+    <scripts> is for processing javascript
+    <style> is for CSS code
+    <textarea> "escapable raw text" means can't have & but instead &amp;
+    <title> "escapable raw text" means can't have & but instead &amp;
+    <pre> "pre formatted" aka still need to escape to not cause <b> to be ran as HTML tags
