@@ -1,37 +1,29 @@
------------------------
-- Compiled References -
------------------------
+# HTML Quick Reference
+## Resources
+Mozilla's [HTML main reference](https://developer.mozilla.org/en-US/docs/Web/HTML)\
+Mozilla's [Element reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)\
+Mozilla's [Attribute reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)\
+Mozilla's [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+[Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 
----
-- Resources
----
-Mozilla's HTML main reference: https://developer.mozilla.org/en-US/docs/Web/HTML
-Mozilla's Element reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-Mozilla's Attribute reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
-Mozilla's Event reference: https://developer.mozilla.org/en-US/docs/Web/Events
-
----
-- Void Elements
----
-[TBS reference on void elements]
-Void elements are types of tags that have no children
+## Void Elements
+[TBS reference on void elements]\
+Void elements are types of tags that have no children\
 End tag may be assumed or included via an end slash in the first tag
 
-Common void tags
-        br      =   produces a line break in text (carriage-return)
-        hr      =   represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section
-        img     =   embeds an image into the document.
-        input   =   used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.
-        link    =   specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.
-        meta    =   represents Metadata that cannot be represented by other HTML meta-related elements, like base, link, script, style or title
+### Common void tags
+    br      =   produces a line break in text (carriage-return)
+    hr      =   represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift oftopic within a section
+    img     =   embeds an image into the document.
+    input   =   used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.
+    link    =   specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.
+    meta    =   represents Metadata that cannot be represented by other HTML meta-related elements, like base, link, script, style ortitle
 
----
-- Attributes
----
+## Attributes
 Mozilla's list: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
 
 
-Common Attributes:
+### Common Attributes:
     alt         =   alt text if image can't be viewed
     disabled    =   Indicates whether the user can interact with the element.
     download    =   Indicates that the hyperlink is to be used for downloading a resource.
@@ -45,7 +37,7 @@ Common Attributes:
     data        =   NOT data-*. Specifies the URL of the resource
     type        =   Defines the type of an element
 
-Common Form Attributes:
+### Common Form Attributes:
     accept          =   List of types the server accepts, typically a file type
     accept-charset  =   List of supported character sets (charset)
     action          =   The URI of a program that processes the information submitted via the form
@@ -56,7 +48,7 @@ Common Form Attributes:
     tabindex        =   Global, overrides the browser's default tab order and follows the one specified instead
     type            =   Defines the type of an element
 
-Banished Attributes as of HTML5:
+### Banished Attributes as of HTML5:
     align       =   Specifies the horizontal alignment of the element
     background  =   Use CSS "background-image" instead
     bgcolor     =   Use CSS "background-color" instead
