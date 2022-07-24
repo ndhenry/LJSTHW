@@ -1,0 +1,64 @@
+------------------
+- 03: Attributes -
+------------------
+
+---
+- Properties
+---
+Define tags (objects)
+    As they sound
+    1. Name
+    2. Written inside the <>
+    3. use = to Define
+    4. give value in definition
+
+---
+- Attributes
+---
+Mozilla's list: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+Common Attributes:
+    alt         =   alt text if image can't be viewed
+    disabled    =   Indicates whether the user can interact with the element.
+    download    =   Indicates that the hyperlink is to be used for downloading a resource.
+    hidden      =   Prevents rendering of given element, while keeping child elements, e.g. script elements, active.
+    href        =   "Hyper reference", the URL of a linked resource
+    id          =   UID of item, Often used with CSS to style a specific element. The value of this attribute must be unique.
+    class       =   A group concept often used with CSS to style elements with common properties
+    rel         =   Specifies the relationship of the target object to the link object
+    src         =   Source location, the URL of the embeddable content
+    style       =   Defines CSS styles which will override styles previously set
+    data        =   NOT data-*. Specifies the URL of the resource
+    type        =   Defines the type of an element
+
+Common Form Attributes:
+    accept          =   List of types the server accepts, typically a file type
+    accept-charset  =   List of supported character sets (charset)
+    action          =   The URI of a program that processes the information submitted via the form
+    auto-complete   =   Indicates whether controls in this form can by default have their values automatically completed by the browser
+    checked         =   Indicates whether the element should be checked on page load (think checkbox)
+    for             =   Describes elements which belongs to this one
+    form            =   Indicates the form that is the owner of the element
+    tabindex        =   Global, overrides the browser's default tab order and follows the one specified instead
+    type            =   Defines the type of an element
+
+Banished Attributes as of HTML5:
+    align       =   Specifies the horizontal alignment of the element
+    background  =   Use CSS "background-image" instead
+    bgcolor     =   Use CSS "background-color" instead
+    border      =   Use CSS "border" instead
+    color       =   Use CSS "color" instead
+    height      =   In some cases, use CSS "height" instead
+    manifest    =   This attribute is obsolete, use <link rel="manifest"> instead
+    width       =   In some cases use CSS "width" instead
+
+---
+- Events
+---
+Also refered to as triggers
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/Events
+
+Common Events:
+    on          =   
+    onerror     =
+    onclick     =
+    onmousedown =
