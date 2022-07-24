@@ -21,6 +21,20 @@ End tag may be assumed or included via an end slash in the first tag
 * link    =   specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.
 * meta    =   represents Metadata that cannot be represented by other HTML meta-related elements, like base, link, script, style ortitle
 
+## Custom Tags
+Tags that aren't from the standard naming. Makes them tags, elements, in the DOC with no special formatting. Rather useful. Can use "-" character even though standard tags never will.
+
+### Pros
+1. Far easier to read truly semantic HTML that visually and linguistically matches what you mean. If a tag represents a person, you write person not div that has a class of person.
+2. Far simpler CSS rules that don't require as much specificity hacking and follow the true spirit of CSS's design.
+3. Less convoluted structure to support layout and design.
+4. More flexible design systems. If you want to rework the design you shouldn't need to rework the HTML with custom tags. With div class you almost always have to restructure the HTML for new layouts and designs.
+
+### Cons
+1. More likely to accidentally use a tag that already exists in the standard. It's a minor annoyance but you may decide to write `<marquee>` without knowing that already exists. If you do, just change the name or add a dash.
+2. More difficult to target a specific element, but in reality you have this problem with div.class and need to use id markers or data-* for both anyway.
+3. Not the popular way to do things, despite being easier, so you may run into weirdos who hate you for writing HTML this way.
+
 ## Attributes
 Mozilla's list: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
 
@@ -60,8 +74,24 @@ Mozilla's list: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
 * manifest    =   This attribute is obsolete, use `<link * rel="manifest">` instead
 * width       =   In some cases use CSS "width" instead
 
-### Common Use Cases
-#### Tables
+## Common Use Cases
+### Tables
+
+    <table>
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Color</th>
+            <tr>
+        </thead>
+        <tbody>
+            <tr><td>Apple</td><td>Red</td></tr>
+            <tr><td>Mango</td><td>Orange</td></tr>
+            <tr><td>Strawberry</td><td>Red</td></tr>
+            <tr><td>Pitaya</td><td>Magenta</td></tr>
+        </tbody>
+    </table>
+    
 * `<table>` -- This starts a table off and contains all of the other tags.
 * `<thead>` -- Starts the header row, which can contain labels for each column.
 * `<tr>` -- Defines a row.
@@ -70,7 +100,7 @@ Mozilla's list: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
 * `<tbody>` -- Configures the body of the table, and usually comes after thead.
 * `<tfoot>` -- If there's a header, there's a footer.
 
-#### Forms
+### Forms
 Basic Example:
 
     <form action="/login" method="POST">
