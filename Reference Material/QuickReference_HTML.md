@@ -3,7 +3,9 @@
 Mozilla's [HTML main reference](https://developer.mozilla.org/en-US/docs/Web/HTML)\
 Mozilla's [Element reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)\
 Mozilla's [Attribute reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)\
-Mozilla's [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+Mozilla's [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)\
+Mozilla's [Input Type Reference Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)\
+Mozilla's [Input Atrributes Reference Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes)\
 [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 
 ## Void Elements
@@ -67,3 +69,59 @@ Mozilla's list: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
 * `<th>` -- Defines a table column heading.
 * `<tbody>` -- Configures the body of the table, and usually comes after thead.
 * `<tfoot>` -- If there's a header, there's a footer.
+
+#### Forms
+Basic Example:
+
+    <form action="/login" method="POST">
+        <input placeholder="Username" type="text" name="name">
+
+        <input placeholder="Password" type="password" name="password">
+
+        <input type="submit" value="Login">
+    </form>
+
+Most Used Types:
+* button
+* checkbox
+* color
+* email
+* file
+* hidden
+* number
+* password
+* radio
+* range
+* reset
+* search
+* submit
+* text
+
+Most Uses:
+* type
+* value
+* required
+* readonly
+* placeholder
+* checked
+* disabled
+* name
+* autocomplete
+
+Avoid for CSS Instead:
+* width
+* size
+* height
+
+Be Careful due to Validation without Feedback
+* pattern
+* step
+* min
+* minlength
+* max
+* maxlength
+
+Careful / Really Justify Use:
+* autofocus
+* capture
+* list
